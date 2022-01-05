@@ -5,9 +5,6 @@ module comp(reset,clk,a,b,greater,equal,less);
 input reset,clk,a,b;
 output reg greater,equal,less;
 reg[2:0] state;
-//parameter GREATER=3'b010;
-//parameter EQUAL=3'b001;
-//parameter LESS=3'b011;
 always @(posedge clk,posedge reset)
 begin
 if(reset)
